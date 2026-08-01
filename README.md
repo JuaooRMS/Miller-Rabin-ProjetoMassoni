@@ -36,16 +36,19 @@ Assim, aumentando o número de rodadas, a chance de erro torna-se extremamente p
 
 Exemplo:
 
-- 5 rodadas:
+Exemplo:
+
+**5 rodadas:**
+
 $$
-\left(\frac14\right)^5 = \frac1{1024}
+\left(\frac{1}{4}\right)^5 = \frac{1}{1024}
 $$
 
-- 10 rodadas:
-$$
-\left(\frac14\right)^{10} = \frac1{1048576}
-$$
+**10 rodadas:**
 
+$$
+\left(\frac{1}{4}\right)^{10} = \frac{1}{1048576}
+$$
 ---
 
 # 🧮 Fundamentação Matemática
@@ -159,3 +162,4 @@ O teste de Miller-Rabin possui diversas aplicações, principalmente em:
 - João Raphanelly
 - Hilbert Machado
 - Mateus Rocha
+- Eva Braga
