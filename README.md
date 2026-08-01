@@ -36,8 +36,6 @@ Assim, aumentando o número de rodadas, a chance de erro torna-se extremamente p
 
 Exemplo:
 
-Exemplo:
-
 **5 rodadas:**
 
 $$
