@@ -49,6 +49,7 @@ $$
 $$
 \left(\frac{1}{4}\right)^{10} = \frac{1}{1048576}
 $$
+
 ---
 
 # 🧮 Fundamentação Matemática
