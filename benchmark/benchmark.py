@@ -8,18 +8,8 @@ import matplotlib.pyplot as plt
 import time
 import random
 
-def divisivel_por_primo_notavel(n):
-    for p in PRIMOS:
-        if n % p == 0:
-            return True
-
-    return False
-
 def gerar_numero_aleatorio(n_digitos):
     return random.randint(pow(10, n_digitos-1), pow(10, n_digitos) - 1)
-
-    
-    
 
 
 tamanhos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
