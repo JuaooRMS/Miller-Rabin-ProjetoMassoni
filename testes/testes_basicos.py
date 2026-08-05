@@ -19,9 +19,9 @@ def teste_primos_conhecidos():
 
     total_erros = 0
 
-    print(f"{"-"*60}")
+    print(f"{'-' * 60}")
     print (f"-{"Testando Primos Conhecidos":^58}-")
-    print(f"{"-"*60}")
+    print(f"{'-' * 60}")
 
     # Testando cada primo conhecido.
     for primo in primos_conhecidos:
@@ -33,7 +33,7 @@ def teste_primos_conhecidos():
             total_erros += 1
     
     # Imprimindo o total de falhas.
-    print(f"{"-"*60}")
+    print(f"{'-' * 60}")
     print(f" {f'Total de falhas: {total_erros:>2} de {len(primos_conhecidos):>2} testes realizados.':<58}")
 
 
@@ -42,9 +42,9 @@ def teste_compostos_de_fatores_primos():
     compostos = [101 * 103, 104729 * 1299709, 32452843 * 49979687, 67867967 * 982451653]
     total_erros = 0
 
-    print(f"\n{"-"*60}")
+    print(f"{'-' * 60}")
     print (f"-{"Testando Compostos de Fatores Primos":^58}-")
-    print(f"{"-"*60}")
+    print(f"{'-' * 60}")
 
     # Testando cada número composto.
     for composto in compostos:
@@ -56,7 +56,7 @@ def teste_compostos_de_fatores_primos():
         else:
             print(f" {f'{composto} é composto.':<56}")
     
-    print(f"{"-"*60}")
+    print(f"{'-' * 60}")
     print(f" {f'Total de falhas: {total_erros:>2} de {len(compostos):>2} testes realizados.':<56}")
 
 
@@ -77,9 +77,9 @@ def teste_numeros_de_carmichael():
     numeros_carmichael = [561, 1105, 1729, 2465, 2821, 6601, 8911, 162401, 172081, 188461,41041, 62745, 63973]
     total_erros = 0
 
-    print(f"\n{"-"*60}")
+    print(f"{'-' * 60}")
     print (f"-{"Testando Números de Carmichael":^58}-")
-    print(f"{"-"*60}")
+    print(f"{'-' * 60}")
 
     # Testando cada número da sequência.
     for carmichael in numeros_carmichael:
@@ -91,7 +91,7 @@ def teste_numeros_de_carmichael():
         else:
             print(f" {f'{carmichael} é composto.':<58}")
     
-    print(f"{"-"*60}")
+    print(f"{'-' * 60}")
     print(f" {f'Total de falhas: {total_erros:>2} de {len(numeros_carmichael):>2} testes realizados.':<58}")
 
 
@@ -108,9 +108,9 @@ def teste_primos_de_mersenne():
         "2 ** 107 - 1": 162259276829213363391578010288127}
     total_erros = 0
 
-    print(f"\n{"-"*60}")
+    print(f"{'-' * 60}")
     print (f"-{"Testando Primos de Mersenne":^58}-")
-    print(f"{"-"*60}")
+    print(f"{'-' * 60}")
 
     # Testando cada número da sequência.
     for primo,valor in primos_mersenne.items():

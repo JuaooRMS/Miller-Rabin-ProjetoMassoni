@@ -121,18 +121,18 @@ def teste_estresse(repeticoes=40):
 
         total_diferencas += diferencas
     
-    print (f"{"-"*73}")
+    print(f"{'-' * 73}")
     print (f"\nTotal de testes realizados: {total_testes}")
     print (f"Total de diferenças encontradas: {total_diferencas}")
     print (f"Percentual de acertos: {((total_testes - total_diferencas) / total_testes) * 100:.2f}%")
-    print (f"{"-"*73}")
+    print(f"{'-' * 73}")
 
 
 def main():
     print("\nTeste de Estresse - Miller-Rabin x sympy.isprime\n")
-    print (f"{"-"*73}")
+    print(f"{'-' * 73}")
     print (f"-{'Comparação (Miller-Rabin x sympy.isprime) - Base 40':^71}-")
-    print (f"{"-"*73}")
+    print(f"{'-' * 73}")
     teste_estresse()
 
 if __name__ == "__main__":

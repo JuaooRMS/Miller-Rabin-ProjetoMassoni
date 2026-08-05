@@ -25,8 +25,6 @@ NUMEROS_DE_CARMICHAEL = (
     252601, 278545, 294409, 314821
 )
 
-
-
 # Quantidade de rodadas utilizadas no teste.
 #
 # Cada rodada representa uma nova testemunha (base).
@@ -35,7 +33,6 @@ NUMEROS_DE_CARMICHAEL = (
 RODADAS_MILLER_RABIN = (
     1, 2, 3, 5, 10, 20, 40
 )
-
 
 
 @dataclass
@@ -66,8 +63,6 @@ class ResultadoCarmichael:
     falsos_esperados: float
 
 
-
-
 def executar_teste_carmichael(repeticoes_por_rodada=1000):
 
 
@@ -86,11 +81,8 @@ def executar_teste_carmichael(repeticoes_por_rodada=1000):
 
     resultados = []
 
-
-
     # Testamos diferentes quantidades de testemunhas.
     for quantidade_rodadas in RODADAS_MILLER_RABIN:
-
 
         falsos_positivos = 0
         total_testes = 0
@@ -162,7 +154,6 @@ def executar_teste_carmichael(repeticoes_por_rodada=1000):
         )
 
     return resultados
-
 
 def main():
 

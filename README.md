@@ -68,8 +68,8 @@ $$
 
 onde:
 
-- `s` é um inteiro não negativo;
-- `d` é um número ímpar.
+* `s` é um inteiro não negativo;
+* `d` é um número ímpar.
 
 A partir disso, para uma base `a`, o número `n` é considerado provavelmente primo se uma das condições for satisfeita:
 
@@ -102,25 +102,87 @@ $$
 O algoritmo segue os seguintes passos:
 
 1. Recebe um número inteiro `n`.
-2. Escreve `n - 1` na forma:
+2. Escreve `n - 1` na forma
 
 $$
-n-1 = 2^s \cdot d
+n - 1 = 2^s \cdot d
 $$
 
 3. Escolhe uma base aleatória `a`.
-4. Calcula:
+4. Calcula
 
 $$
-x = a^d \mod n
+x = a^d \bmod n
 $$
 
 5. Verifica se:
 
-- `x = 1`, ou
-- algum valor sucessivo de `x² mod n` é igual a `n-1`.
+   * `x = 1`; ou
+   * algum valor sucessivo de `x² mod n` é igual a `n - 1`.
 
 6. Repete o processo por `k` rodadas para aumentar a confiabilidade.
+
+---
+
+# ▶️ Instruções de Uso
+
+## Pré-requisitos
+
+* Python 3.10 ou superior;
+* Biblioteca `sympy`.
+
+Instale a dependência com:
+
+```bash
+pip install sympy
+```
+
+## Executando o programa
+
+Na raiz do projeto, execute:
+
+```bash
+python main.py
+```
+
+Ao iniciar, será exibido um menu com as seguintes opções:
+
+| Opção | Descrição                                                              |
+| :---: | ---------------------------------------------------------------------- |
+| **1** | Testar um número utilizando o algoritmo de Miller-Rabin.               |
+| **2** | Gerar o gráfico de desempenho (bits × tempo).                          |
+| **3** | Gerar o gráfico da taxa de erro utilizando números de Carmichael.      |
+| **4** | Gerar o gráfico de comparação entre o Miller-Rabin e o método ingênuo. |
+| **5** | Executar todos os gráficos do projeto.                                 |
+| **6** | Executar todos os testes implementados.                                |
+| **0** | Encerrar o programa.                                                   |
+
+Basta digitar a opção desejada e pressionar **Enter**.
+
+## Estrutura do Projeto
+
+```text
+.
+├── algoritmo
+│   ├── decomposicao.py
+│   ├── main_miller_rabin.py
+│   ├── miller_rabin.py
+│   └── testemunha.py
+│
+├── graficos
+│   ├── comparacao.py
+│   ├── desempenho.py
+│   └── erro.py
+│
+├── testes
+│   ├── comparacao.py
+│   ├── testes_basicos.py
+│   ├── testes_carmichael.py
+│   └── testes_de_estresse.py
+│
+├── main.py
+└── README.md
+```
 
 ---
 
@@ -128,19 +190,19 @@ $$
 
 O custo do algoritmo depende da quantidade de rodadas realizadas.
 
-Para cada rodada são realizadas operações de exponenciação modular, que possuem complexidade:
+Para cada rodada são realizadas operações de exponenciação modular, cuja complexidade é
 
 $$
 O(\log n)
 $$
 
-Portanto, para `k` rodadas:
+Assim, considerando `k` rodadas, a complexidade total é
 
 $$
 O(k \log n)
 $$
 
-Como normalmente `k` é pequeno, o algoritmo consegue verificar números com centenas de dígitos de forma eficiente.
+Como normalmente `k` é um valor pequeno, o algoritmo consegue testar números com centenas ou milhares de bits de maneira eficiente.
 
 ---
 
@@ -148,17 +210,17 @@ Como normalmente `k` é pequeno, o algoritmo consegue verificar números com cen
 
 O teste de Miller-Rabin possui diversas aplicações, principalmente em:
 
-- 🔑 Geração de chaves criptográficas (RSA);
-- 🔐 Sistemas de segurança digital;
-- 📡 Protocolos de comunicação segura;
-- 🔢 Verificação de grandes números primos.
+* 🔑 Geração de chaves criptográficas (RSA);
+* 🔐 Sistemas de segurança digital;
+* 📡 Protocolos de comunicação segura;
+* 🔢 Verificação de grandes números primos.
 
 ---
 
 # 👥 Integrantes
 
-- Thalles Gabriel Saraiva
-- João Raphanelly
-- Hilbert Machado
-- Mateus Soares
-- Eva Braga
+* Thalles Gabriel Saraiva de Lira Silva
+* João Raphannely Medeiros Silva
+* Hilbert Machado Gomes
+* Mateus Soares da Rocha Cordeiro
+* Eva Braga Santos
