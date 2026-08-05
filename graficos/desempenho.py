@@ -8,7 +8,7 @@ from dataclasses import dataclass
 DIRETORIO_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.path.join(DIRETORIO_BASE, "algoritmo"))
 
-from miller_rabin import miller_rabin
+from algoritmo.miller_rabin import miller_rabin
 
 TAMANHOS_BITS = [
     8,
@@ -110,6 +110,10 @@ def plotar_grafico(resultados):
     plt.show()
 
 def main():
+    grafico_desempenho()
+
+
+def grafico_desempenho():
     resultados = teste_desempenho(1000)
     plotar_grafico(resultados)
 

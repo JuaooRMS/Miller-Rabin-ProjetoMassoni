@@ -8,7 +8,7 @@ from dataclasses import dataclass
 DIRETORIO_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.path.join(DIRETORIO_BASE, "algoritmo"))
 
-from miller_rabin import miller_rabin
+from algoritmo.miller_rabin import miller_rabin
 
 
 

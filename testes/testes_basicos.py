@@ -4,7 +4,7 @@ import sys
 DIRETORIO_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.path.join(DIRETORIO_BASE, 'algoritmo'))
 
-from miller_rabin import miller_rabin
+from algoritmo.miller_rabin import miller_rabin
 
 # Realizando testes básicos do algoritmo Miller-Rabin, com números conhecidos, compostos de fatores primos, números de Carmichael e primos de Mersenne.
 
