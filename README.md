@@ -160,5 +160,5 @@ O teste de Miller-Rabin possui diversas aplicações, principalmente em:
 - Thalles Gabriel Saraiva
 - João Raphanelly
 - Hilbert Machado
-- Mateus Rocha
+- Mateus Soares
 - Eva Braga
