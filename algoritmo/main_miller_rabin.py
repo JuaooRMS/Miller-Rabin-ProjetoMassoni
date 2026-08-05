@@ -1,6 +1,6 @@
-from miller_rabin import miller_rabin
+from algoritmo.miller_rabin import miller_rabin
 
-def main():
+def testar_miller_rabin():
 
     numero = int(input("Número: "))
     rodadas = int(input("Rodadas: "))
@@ -11,7 +11,8 @@ def main():
         print(f"{numero} é composto.")
 
 
-main()
+if __name__ == "__main__":
+    testar_miller_rabin()
 
 # OBSERVAÇÃO
 #
